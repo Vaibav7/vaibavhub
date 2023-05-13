@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <title>Document</title>
+    <style>
+      body {
+        background-image: linear-gradient(
+          111.4deg,
+          rgba(238, 113, 113, 1) 1%,
+          rgba(246, 215, 148, 1) 58%
+        );
+        font-family:'Montserrat',sans-serif;
+      }
+      .main-content{
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main-content" style="
+    padding-top: 14px;
+    width: 525px;
+    margin-left: 503px;
+    margin-top: 155px;
+    padding-bottom: 58px;
+    background-color: white;
+    border-radius:20px;
+">
+    <h1 style="padding-bottom:23px;">LOG IN</h1>
+      <label for="name">User Name:</label><input type="text" id="name" /><br /><br />
+      
+      <label for="password">Password:<input type="password" id="p1"style="margin-right:20px;"/></label
+      ><br /><br />
+      <label for="re_pass"
+        >Re-Type Password: <input type="password" name="" id="p2" style="margin-right:81px;" /></label
+      ><br /><br />
+      <button onclick="match()" style="margin-top:23px;font-size:16px;padding-top: 5px;padding-left: 10px;padding-right: 10px;padding-bottom: 5px;border-radius:25px;background-color: rgb(255,166,0);border-width: 0;"> <a href="./index.html" target="_blank" style="color:white;background-color:rgb(255,166,0);text-decoration: none;border:0;">Log-In</a></button>
+    </div>
+
+    <script>
+      function match() {
+        let x1, x2, x3;
+        x3 = document.getElementById("name").value;
+        x1 = document.getElementById("p1").value;
+        x2 = document.getElementById("p2").value;
+        if (x3 == "") {
+          alert("Fill all the credentials");
+          return false;
+        } else if (x1 == x2) {
+          alert("Logged in successfully");
+        } else if (x1 != x2) {
+          alert("Password don't match");
+          return false;
+        }
+      }
+    </script>
+  </body>
+</html>

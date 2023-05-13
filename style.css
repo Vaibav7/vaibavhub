@@ -1,0 +1,286 @@
+.logo img {
+  width: 175px;
+  height: 100%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.nav-bar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.nav-bar ul {
+  list-style: none;
+  margin-right: 20px;
+}
+
+nav {
+  flex: 1;
+  text-align: right;
+  margin: auto;
+}
+
+nav ul li {
+  display: inline-block;
+  margin-right: 30px;
+}
+
+#last {
+  margin-right: 0;
+  padding-right: 0;
+}
+
+nav ul li a {
+  text-decoration: none;
+  position: relative;
+  color: rgb(255, 0, 0);
+  font-size: 18px;
+  letter-spacing: 0.5px;
+  text-shadow: 1px 3px 6px red;
+}
+
+nav ul li a::after {
+  content: "";
+  position: absolute;
+  background-color: rgb(90, 0, 0);
+  height: 3px;
+  width: 0;
+  left: 0;
+  bottom: -10px;
+  text-shadow: 1px 3px 6px rgb(90, 0, 0);
+  transition: 0.3s;
+}
+
+nav ul li a:hover::after {
+  width: 100%;
+}
+
+nav ul li a:hover {
+  color: rgb(63, 0, 0);
+  transition: 0.5s;
+  text-shadow: 1px 3px 6px rgb(90, 0, 0);
+}
+
+p {
+  color: rgb(194, 43, 43);
+}
+
+.container {
+  max-width: 1300px;
+  margin: auto;
+  padding-left: 50px;
+  padding-top: 10px;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.col-2 {
+  flex-basis: 50%;
+  min-width: 300px;
+  text-align: center;
+}
+
+.col-2 p {
+  font-size: 20px;
+  line-height: 30px;
+}
+
+.col-2 h1 {
+  font-size: 50px;
+  line-height: 60px;
+  margin: 25px 0;
+  margin-bottom: 5px;
+  text-align: center;
+}
+
+#first-col:hover {
+  transform: scale(1.01);
+  transition: 0.5s ease-in-out;
+}
+
+#first-col:not(:hover) {
+  transform: scale(0.9);
+  transition: 0.5s ease-in-out;
+}
+
+.col-2 img {
+  max-width: 60%;
+  padding: 50px 0;
+  margin-left: 100px;
+  filter: drop-shadow(15px 5px 10px #222);
+}
+
+.button {
+  display: inline-block;
+  background: rgb(255, 166, 0);
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  padding: 8px 30px;
+  margin: 10px 0;
+  border-radius: 30px;
+}
+
+.button:hover {
+  background: rgb(255, 94, 0);
+  transition: 0.5s ease-in-out;
+}
+
+.header {
+  background: radial-gradient(white, #ffd6d6);
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+.header .row {
+  margin-top: 25px;
+}
+
+.cart {
+  width: 50px;
+  height: 40px;
+  margin-bottom: 5px;
+  margin-right: 10px;
+}
+
+/*----product section css ----*/
+.products {
+  margin: 70px 0;
+  margin-bottom: 35px;
+}
+
+.col-3 {
+  flex-basis: 30%;
+  min-width: 250px;
+  margin-bottom: 30px;
+}
+
+.col-3 img {
+  width: 100%;
+}
+
+.mini-container {
+  max-width: 1080px;
+  margin: auto;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.cart:not(:hover) {
+  transform: scale(0.9);
+  transition: 0.5s;
+}
+
+.cart:hover {
+  transform: scale(1.1);
+  transition: 0.5s;
+}
+
+.col-4 {
+  flex-basis: 25%;
+  padding: 10px;
+  min-width: 200px;
+  margin-bottom: 50px;
+}
+
+.col-4 img {
+  width: 100%;
+}
+
+.col-4 h4,
+.col-4 p {
+  padding-left: 25px;
+}
+
+.col-4 h4 {
+  color: #555;
+  font-weight: bold;
+  margin-bottom: 3px;
+}
+
+.col-4 p {
+  font-size: 14px;
+}
+
+.title {
+  text-align: center;
+  font-weight: bolder;
+  margin: 0 auto 50px;
+  position: relative;
+  line-height: 60px;
+  text-decoration: solid;
+  color: rgb(65, 64, 64);
+  text-shadow: 1px 3px 6px rgb(65, 65, 65);
+}
+
+.title::after {
+  content: "";
+  background: indianred;
+  font-weight: bolder;
+  width: 80px;
+  height: 5px;
+  border-radius: 5px;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: 0.5;
+}
+
+.title2 {
+  text-align: center;
+  font-weight: bolder;
+  margin: 0 auto 40px;
+  position: relative;
+  line-height: 60px;
+  text-decoration: solid;
+  color: rgb(65, 64, 64);
+  text-shadow: 1px 3px 6px rgb(65, 65, 65);
+}
+
+.title2::after {
+  content: "";
+  background: indianred;
+  font-weight: bolder;
+  width: 150px;
+  height: 5px;
+  border-radius: 5px;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: 0.5;
+}
+
+.col-4:hover {
+  transform: scale(1.01);
+  transition: 0.5s;
+}
+
+.col-4:not(:hover) {
+  transform: scale(0.9);
+  transition: 0.5s;
+}
+
+
+#Products {
+  background: radial-gradient(rgb(202, 159, 150), rgb(255, 222, 222));
+}
+
